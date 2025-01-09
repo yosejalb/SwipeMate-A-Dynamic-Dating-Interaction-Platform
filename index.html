@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinder Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    .details-container {
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.983));
+    }
+  </style>
+</head>
+
+<body>
+  <div class="w-full h-screen bg-black">
+    <div class="imagecontainer w-full h-screen relative overflow-hidden">
+      <!-- main card -->
+      <div
+        class="maincard z-[3] w-[130%] h-[130%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-slate-950 absolute">
+        <img class="w-full h-full object-cover md:object-scale-down" src="" alt="">
+      </div>
+      <div class="incomingcard z-[2] w-[130%] h-[130%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  absolute">
+        <img class="w-full h-full object-cover md:object-scale-down" src="" alt="">
+
+
+      </div>
+    </div>
+
+    <div class="w-full h-screen absolute top-0 left-0 flex flex-col justify-between z-[4]">
+      <!-- navbar -->
+      <div class="navbar px-5 py-6 flex justify-between items-center text-white">
+        <div class="prflimg w-[3rem] h-[3rem] rounded-full overflow-hidden ">
+          <!-- profile pic image -->
+          <img class="w-full h-full object-cover" src="" alt="">
+        </div>
+        <h3 class="text-2xl font-medium tracking-tight">They liked you.</h3>
+        <div class="chaticon relative flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white/20">
+          <i class="opacity-80 ri-chat-3-fill"></i>
+          <div
+            class="badge flex items-center justify-center rounded-full absolute top-0 right-0 translate-x-[3px] -translate-y-[5px] w-5 h-5 bg-red-700">
+            <h5 class="text-[13px] font-[400]">5</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="details-container w-full">
+        <!-- details -->
+        <div class="details px-5 py-6">
+          <div class="element location flex text-white gap-4">
+            <i
+              class="w-[1.6rem] h-[1.6rem] bg-white text-black flex items-center justify-center rounded-full font-semibold ri-corner-left-up-line"></i>
+            <h3>PUNE, India</h3>
+          </div>
+          <div class="element name flex gap-5 mt-1">
+            <h1 class="font-regular tracking-tighter text-7xl text-white">Victoria</h1>
+            <h1 class="font-regular tracking-tighter text-7xl text-white opacity-60">20</h1>
+          </div>
+          <div class="element tags flex gap-3 text-white mt-4">
+            <!-- interests -->
+          </div>
+          <div class="element bio text-white/80 mt-5">
+            <h3 class="text-xl">Bio</h3>
+            <p class="text-lg mt-3"></p>
+          </div>
+          <div class="element buttons items-start mt-10 flex gap-2 flex-wrap">
+            <button class="deny py-3 rounded-xl w-full sm:w-1/2 bg-white">
+              <i class="text-3xl font-semibold ri-close-line"></i>
+            </button>
+            <button class="accept py-3 rounded-xl w-full sm:w-1/2 bg-[#FC5149]">
+              <i class="text-3xl font-semibold text-white ri-heart-2-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
